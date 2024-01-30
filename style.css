@@ -1,0 +1,256 @@
+*{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.nav-link{
+    font-size: 19px;
+}
+.main-heading{
+    font-weight: 900;
+}
+label{
+    font-size: 17px;
+    font-weight: 200;
+    padding-left: 2px;
+    color: gray;
+}
+.theme-color
+{
+    background: linear-gradient(9deg, #2b7a9e 0%, #0e3e55 50% , #49bcc0 90%);
+}
+.login-card {
+    background: linear-gradient(17deg, #2b7a9e86 0%, #0e3e55b4 30%, #3f489496 55%, #2b7a9e86 100%);
+    margin-top: 100px;
+    border-radius: 1cap;
+    position: relative;
+    overflow: hidden;
+}
+
+.changePassword-card {
+    background: linear-gradient(17deg, #2b7a9e86 0%, #0e3e55b4 30%, #3f489496 55%, #2b7a9e86 100%);
+    border-radius: 1cap;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Flare Animation */
+.flare-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #175b7aef, #083246 , #082a73e8, #159ab4b2);
+    animation: flareAnimation 3s linear infinite;
+    mix-blend-mode: screen;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes flareAnimation {
+    0% {
+        transform: translateZ(100%) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateZ(-100%) rotate(-360deg);
+        opacity: 0;
+    }
+}
+
+.login-background{
+    background: linear-gradient(100deg, #2b7a9e 0%, #264a5ace 50%);
+}
+nav{
+    padding-left: 2px;
+}
+.jumbo-heading{
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.modal-content{
+    background: linear-gradient(17deg, #2b7a9eef 0%, #0e3e55ef 30%, #3f4794f0 55%, #2b7a9eef 100%);
+    /* background: linear-gradient(9deg, #2b7a9ee9 0%, #0e3e55e7 50% , #063c3eed 90%); */
+}
+.modal label{
+    color: white;
+}
+.modal-header{
+    border: none !important;
+}
+.modal-footer{
+    border: none !important;
+    margin-right: auto;
+}
+.modal-title{
+    margin-left: auto;
+    font-weight: 900;
+    color: white;
+}
+.dataTables_wrapper .dataTables_filter input{
+    margin-bottom: 7px;
+}
+.copied-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+.fas.fa-paperclip, .copied, #forgetPassword, #eyeIcon, #eyeIcon1, #eyeIcon2, #eyeIcon3:hover{
+    cursor: pointer;
+}
+.btn-success{
+    background: linear-gradient(9deg, #85c97c 0%, #11a17d 50% , #16494af7 90%);
+}
+.btn-primary{
+    background: linear-gradient(9deg, #2b7a9e 0%, #0e3e55 50% , #49bcc0 90%);
+}
+.btn-info{
+    background: linear-gradient(9deg, #0e4667 0%, #6ea6c7de 50% , #497d94e4 90%);
+}
+.btn-danger{
+    background: linear-gradient(9deg, #bb6373ed 0%, #6b0808ec 50% , #815353ed 90%);
+}
+.btn-secondary{
+    background: linear-gradient(9deg, #1e1d1ded 0%, #988e8ee1 50% , #3c3838ed 90%);
+}
+.logout:hover{
+    cursor: pointer;
+}
+.card-body {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  table{
+    border-top: solid 3px black;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+  }
+  .table-striped{
+    background-color: #0e3e55;
+  }
+  thead{
+    color: white;
+  }
+
+  /* Gif Loader */
+  #loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+/* Gif Loader Image */
+#loader-container img {
+    width: 70px;
+    height: 70px;
+}
+
+  /* Mail Sending Loader */
+  #mail-sending-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+/* Mail Sending Loader Image */
+#mail-sending-loader img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Leads Notification Message */
+.notification-container {
+    position: fixed;
+    z-index: 1000;
+    top: 9%;
+    right: 30%;
+    width: 40%;
+}
+
+.notification {
+    /* background-color: #4CAF50; */
+    background: linear-gradient(17deg, #2b7a9eef 0%, #0e3e55ef 30%, #3f4794f0 55%, #2b7a9eef 100%);
+    color: white;
+    border-radius: 5px;
+    display: none;
+    animation: slideInRight 0.5s, slideOutRight 0.5s 2.5s forwards;
+}
+.notification-text
+{
+    font-weight: 900;
+}
+
+@keyframes slideInRight {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 10px;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        right: 10px;
+    }
+    to {
+        right: -300px;
+    }
+}
+
+/* Rank Icon */
+.rank-icon
+{
+    font-size: 27px;
+    cursor: pointer;
+}
+.platinum-icon
+{
+    color: #c5af0ff3;
+}
+.diamond-icon
+{
+    color: #24807cf3;
+}
+.gold-icon
+{
+    color: gold;
+}
+.silver-icon
+{
+    color: gray;
+}
+.bronze-icon
+{
+    color:#cd7f32;
+}
+
+/* Rank Label */
+.rank-label{
+    font-size: 22px;
+}
